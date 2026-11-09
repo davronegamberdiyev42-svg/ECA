@@ -1,0 +1,154 @@
+<!DOCTYPE html><html lang="uz"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Data Science yo‘li: 197 kun</title><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#4f46e5"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="DS yo‘li">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f4f5fb;--c:#fff;--t:#14172b;--m:#6b7089;--a:#4f46e5;--g:#16a34a;--r:#ef4444;--b:#e3e6f0}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1020;--c:#171a30;--t:#eceefb;--m:#9aa0c3;--a:#8b85ff;--g:#34d399;--b:#2a2e4d;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--t);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;padding:12px;max-width:560px;margin:auto}
+.c{background:var(--c);border:1px solid var(--b);border-radius:16px;padding:14px;margin-bottom:12px}
+h1{font-size:18px;margin:0 0 2px}h2{font-size:15px;margin:0 0 8px}.m{color:var(--m);font-size:13px}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:8px}
+button{font:inherit;color:inherit;border:1px solid var(--b);background:var(--c);border-radius:12px;padding:8px 12px;cursor:pointer}
+button.p{background:var(--a);color:#fff;border-color:var(--a)}button:disabled{opacity:.4}
+.tag{display:inline-block;background:var(--a);color:#fff;border-radius:99px;padding:1px 10px;font-size:12px}
+.st{display:flex;gap:10px;margin:8px 0}.st b{min-width:62px;color:var(--a)}
+#tm{font-size:52px;font-weight:700;text-align:center;font-variant-numeric:tabular-nums}
+.bar{height:8px;background:var(--b);border-radius:9px;overflow:hidden;margin:6px 0 10px}.bar i{display:block;height:100%;background:var(--a);width:0}
+.row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.rt{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:8px 0}.rt button.s{background:var(--a);color:#fff}
+.kp{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center}.kp b{display:block;font-size:22px;color:var(--a)}
+.hm{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}.hm button{aspect-ratio:1;padding:0;border-radius:4px;border:0;background:var(--b);font-size:0}
+.hm button.n{outline:2px solid var(--t)}a{color:var(--a)}
+.lk a{display:inline-block;margin:6px 6px 0 0;padding:6px 10px;border:1px solid var(--b);border-radius:99px;text-decoration:none;font-size:13px}.ck{display:flex;gap:8px;align-items:center;padding:6px 0}.ck input{width:20px;height:20px}textarea{width:100%;min-height:64px;margin-top:8px;border:1px solid var(--b);border-radius:12px;background:var(--bg);color:var(--t);font:inherit;padding:8px}.tip{margin-top:8px;padding:10px;border-radius:12px;background:var(--bg);border-left:4px solid var(--a)}.hero{background:linear-gradient(135deg,var(--a),#7c3aed);color:#fff;border:0}.hero .bar{background:#ffffff40}.hero .bar i{background:#fff}pre{background:var(--bg);padding:8px;border-radius:10px;overflow-x:auto;font-size:13px;margin:8px 0}
+</style></head><body>
+<div class="c"><h1>Data Science yo‘li</h1><div class="m">15-noyabr 2026 → 30-may 2027 · kuniga 1 soat · 197 kun</div></div>
+<div id="app"></div>
+<script>
+const S=new Date(2026,10,15),N=197;
+const WD=["Yakshanba","Dushanba","Seshanba","Chorshanba","Payshanba","Juma","Shanba"],MO=["yanvar","fevral","mart","aprel","may","iyun","iyul","avgust","sentyabr","oktyabr","noyabr","dekabr"];
+// theme|yakshanba(matematika)|du|se|chor|pay|ju|shanba(mini-loyiha)
+const W=`Python boshlanishi|Matematika: tenglamalar|print() va birinchi dastur|O‘zgaruvchilar: int, str, float|input() va kalkulyator|Matnlar va f-string|Shartlar: if/elif/else|Mini: yosh hisoblagich dasturi
+Shartlar va sikllar|Matematika: funksiya grafigi|while sikli|for sikli va range()|Ichma-ich sikllar|break va continue|Takrorlash: 5 ta mashq|Mini: son topish o‘yini
+Funksiyalar|Matematika: foiz va nisbat|def va return|Parametrlar|O‘zgaruvchi doirasi (scope)|Funksiya yozish mashqlari|Takrorlash|Mini: valyuta va harorat konvertori
+Ro‘yxatlar|Matematika: tengsizliklar|list asoslari|Indeks va slice|list metodlari|List comprehension|Takrorlash|Mini: baholar o‘rtachasi dasturi
+Lug‘at va to‘plamlar|Matematika: o‘rtacha va mediana|dict asoslari|dict bilan sikl|tuple va set|List + dict aralash|Takrorlash|Mini: kontaktlar daftari
+Fayllar va xatolar|Matematika: ehtimol asoslari|Fayl o‘qish va yozish|CSV bilan ishlash|try/except|Modullar va import|Takrorlash|Mini: CSV dan hisobot chiqarish
+Python yakuniy loyiha|Matematika: koordinatalar|Reja: dehqon hosil kalkulyatori|Kod: 1-qism|Kod: 2-qism|Test va xatolarni tuzatish|README yozish|Yakun: loyiha tayyor
+Python takrorlash|Matematika: takrorlash|Zaif mavzularni aniqlash|Zaif mavzu mashqi 1|Zaif mavzu mashqi 2|50 savollik o‘z-o‘zini test|Natijalar tahlili|Dam va keyingi bosqichga tayyorgarlik
+GitHub va Jupyter|Matematika: grafik va tenglamalar|Colab/Kaggle notebook ochish|Git va GitHub nima|GitHub profil ochish|Birinchi repo va README|Notebook’ni GitHub’ga joylash|Mini: profilni tayyorlash
+NumPy|Matematika: vektorlarga kirish|NumPy massivlar|Indeks va shakl|Matematik amallar|mean, std hisoblari|Takrorlash|Mini: harorat ma’lumoti hisoblari
+Pandas 1|Matematika: o‘rtacha va og‘ish|DataFrame va Series|CSV o‘qish|Ustun va qator tanlash|Filtrlash|Takrorlash|Mini: ochiq dataset bilan tanishuv
+Pandas 2|Matematika: tajriba va ehtimol|Yo‘qolgan qiymatlar (NaN)|groupby|Saralash va birlashtirish|Yangi ustunlar, apply|Takrorlash|Mini: groupby hisoboti
+Matplotlib|Matematika: grafik o‘qish|Chiziqli grafik|Ustunli va doiraviy diagramma|Gistogramma|Scatter plot|Takrorlash|Mini: 4 grafikli panel
+Seaborn va EDA|Matematika: korrelyatsiya g‘oyasi|EDA nima?|Taqsimotlar|Korrelyatsiya|Savollar berish|Takrorlash|Mini: EDA shabloni
+EDA: 1-notebook|Matematika: foiz o‘zgarishi|Hududingiz ob-havo ma’lumotini topish|Tozalash|Tahlil|Grafiklar|Xulosa yozish|GitHub’ga joylash: 1-notebook
+EDA: 2-notebook|Matematika: chiziqli funksiya|Yer yoki hosil ma’lumotini topish|Tozalash|Tahlil|Grafiklar|Xulosa yozish|GitHub’ga joylash: 2-notebook
+SQL asoslari|Matematika: tenglamalar tizimi|SELECT va WHERE|ORDER BY, LIMIT|GROUP BY|JOIN kirish|Takrorlash|Mini: SQL mashqlar to‘plami
+Statistika asoslari|Matematika: dispersiya|Taqsimot, normal egri chiziq|Tanlama va populyatsiya|Gipoteza g‘oyasi|Ishonch oralig‘i g‘oyasi|Takrorlash|Mini: kichik statistik tahlil
+Bosqich tekshiruvi|Matematika: takrorlash|Zaif joylar tahlili|Pandas mashqlar to‘plami|Grafik mashqlar to‘plami|Mini test|Portfolio tozalash|Yakun: README’larni yaxshilash
+Machine Learning kirish|Matematika: vektor (3Blue1Brown)|ML nima va turlari|Train/test bo‘lish|Scikit-learn: 1-model|Baholash: MAE, R²|Takrorlash|Mini: birinchi regressiya
+Chiziqli regressiya|Matematika: matritsa|To‘g‘ri chiziq g‘oyasi|Ko‘p o‘zgaruvchili model|Overfitting|Cross-validation|Takrorlash|Mini: uy narxi modeli
+Random Forest|Matematika: matritsa ko‘paytirish|Decision Tree|Random Forest|Feature importance|Hyperparametrlar|Takrorlash|Mini: modellarni solishtirish
+Kaggle beginner|Matematika: hosila g‘oyasi|Titanic: ma’lumotni o‘rganish|Feature engineering|Model qurish|Natijani submit qilish|Natija tahlili|Mini: 2-submit, yaxshilash
+Agro-dataset tayyorlash|Matematika: hosila qoidalari|Savollar ro‘yxatini tuzish|So‘rovnoma (Google Forms)|Dehqon bilan suhbat tayyorlash|Etika: rozilik va anonimlik|Pilot: 1–2 dehqon|Mini: so‘rovnomani sinash
+Ma’lumot yig‘ish 1|Matematika: ehtimol taqsimoti|Suhbat 1–3|Jadvalga kiritish|Suhbat 4–6|Tozalash|Sifat tekshiruvi|Mini: dataset v0.1
+Ma’lumot yig‘ish 2|Matematika: o‘rtacha va mediana|Suhbat 7–10|Jadvalga kiritish|Suhbat 11–15|Tozalash|Birlashtirish|Mini: dataset v0.2
+Mentor qidirish|Matematika: takrorlash|Mentorlar ro‘yxati (agrar universitet)|Xat yozish|Xatni yuborish|Dataset EDA|Kuzatuv xati|Mini: mentorga hisobot
+Yil yakuni|Matematika: yil takrorlash|Yil natijalari tahlili|Portfolio yangilash|Birinchi agro-model (kichik)|10-sinf rejasini yozish|Zaif joylar|Yakun: 9-sinf hisoboti
+Yakuniy kun|Butun yil natijasini ko‘rib chiqish`.split("\n").map(l=>l.split("|"));
+const PH=[{w:8,n:"Kaggle Learn: Python · py4e.com (Dr. Chuck)",u:"https://www.kaggle.com/learn/python"},{w:19,n:"Kaggle Learn: Pandas va Data Visualization",u:"https://www.kaggle.com/learn/pandas"},{w:99,n:"Kaggle Learn: Intro to Machine Learning",u:"https://www.kaggle.com/learn/intro-to-machine-learning"}];
+const L=(n,u)=>`<a href="${u}" target="_blank" rel="noopener">${n}</a>`;
+const RS=[[8,"Mustaqil kichik dastur yoza olish",[["Kaggle Learn: Python","https://www.kaggle.com/learn/python"],["Python for Everybody (py4e.com)","https://www.py4e.com/"],["Python Tutor: kodni vizual ko‘rish","https://pythontutor.com/"]]],[9,"GitHub profil va birinchi repo",[["GitHub Skills","https://skills.github.com/"],["Google Colab","https://colab.research.google.com/"]]],[11,"NumPy bilan massivlar ustida ishlash",[["NumPy: o‘rganish markazi","https://numpy.org/learn/"],["Python Data Science Handbook","https://jakevdp.github.io/PythonDataScienceHandbook/"]]],[13,"Pandas bilan jadval ma’lumotlari",[["Kaggle Learn: Pandas","https://www.kaggle.com/learn/pandas"],["Python Data Science Handbook","https://jakevdp.github.io/PythonDataScienceHandbook/"]]],[15,"Grafiklar bilan ma’lumotni tushuntirish",[["Kaggle Learn: Data Visualization","https://www.kaggle.com/learn/data-visualization"]]],[17,"Toza, tahlilga tayyor notebook",[["Kaggle Learn: Data Cleaning","https://www.kaggle.com/learn/data-cleaning"],["Kaggle Learn: Pandas","https://www.kaggle.com/learn/pandas"]]],[18,"SQL bilan so‘rov yozish",[["Kaggle Learn: Intro to SQL","https://www.kaggle.com/learn/intro-to-sql"],["SQLBolt","https://sqlbolt.com/"]]],[19,"Statistik fikrlash",[["Seeing Theory (Brown)","https://seeing-theory.brown.edu/"],["StatQuest (YouTube)","https://www.youtube.com/@statquest"],["Khan Academy: Statistika","https://www.khanacademy.org/math/statistics-probability"]]],[20,"Pandas va grafiklarni mustahkamlash",[["Kaggle Learn: Pandas","https://www.kaggle.com/learn/pandas"],["Kaggle Learn: Data Visualization","https://www.kaggle.com/learn/data-visualization"]]],[23,"Birinchi ML modellarini qurish",[["Kaggle Learn: Intro to Machine Learning","https://www.kaggle.com/learn/intro-to-machine-learning"],["Kaggle Learn: Intermediate ML","https://www.kaggle.com/learn/intermediate-machine-learning"],["Google ML Crash Course","https://developers.google.com/machine-learning/crash-course"]]],[24,"Kaggle’da birinchi musobaqa",[["Kaggle: Titanic","https://www.kaggle.com/competitions/titanic"],["StatQuest (YouTube)","https://www.youtube.com/@statquest"]]],[99,"O‘z agro-datasetingizni yig‘ish",[["Google Forms","https://www.google.com/forms/about/"],["FAOSTAT: qishloq xo‘jaligi ma’lumotlari","https://www.fao.org/faostat/"]]]];
+const MS=[[19,"Maktab algebrasi va statistika poydevori",[["Khan Academy: Algebra","https://www.khanacademy.org/math/algebra"],["Khan Academy: Statistika","https://www.khanacademy.org/math/statistics-probability"]]],[23,"Chiziqli algebra: vektor va matritsa",[["3Blue1Brown: Linear Algebra","https://www.3blue1brown.com/topics/linear-algebra"],["Khan Academy: Linear Algebra","https://www.khanacademy.org/math/linear-algebra"]]],[99,"Hosila g‘oyasi va ehtimol",[["3Blue1Brown: Calculus","https://www.3blue1brown.com/topics/calculus"],["Khan Academy: Calculus","https://www.khanacademy.org/math/calculus-1"]]]];
+const CK=["Kod xatosiz ishladi","Xotiradan qayta yozdim","Boshqaga tushuntira olaman"];
+const MZ={learn:"kod ishlaydi va uni o‘zingiz tushuntira olasiz",mini:"ishlaydigan mini-natija GitHub’da yoki daftarda",math:"5 ta mashqdan kamida 4 tasi to‘g‘ri"};
+const ST={learn:["5 daq|Kechagi kodni qayta ishga tushiring","40 daq|«{t}»: resursdan o‘qing yoki ko‘ring. Har qatorni o‘zingiz yozing, nusxa ko‘chirmang","15 daq|Oynani yoping, xotiradan shu kodni qayta yozing. Tushunmagan joyni daftarga yozing"],mini:["10 daq|Nima qurishni 3 qatorda yozing","40 daq|«{t}»: kod yozing, xatoni o‘zingiz toping","10 daq|Natijani GitHub’ga yoki daftarga saqlang"],math:["40 daq|«{t}»: video ko‘ring, so‘ng 5 ta mashq yeching","20 daq|Yechimlarni daftarga yozing, bitta o‘z misolingizni tuzing"]};
+const TY={learn:"O‘rganish",mini:"Mini-loyiha",math:"Matematika"};
+const $=id=>document.getElementById(id);
+let D={};try{D=JSON.parse(localStorage.getItem("ds1")||"{}")}catch(e){}
+const sv=()=>{try{localStorage.setItem("ds1",JSON.stringify(D))}catch(e){}};
+let ti=0;function rt(){const n=new Date();ti=Math.round((new Date(n.getFullYear(),n.getMonth(),n.getDate())-S)/864e5)}rt();
+let cur=Math.max(0,Math.min(N-1,ti)),T={run:false,t0:0,acc:0,i:-1},WL=null,dp=null;
+const dt=i=>new Date(2026,10,15+i);
+const fmt=i=>{const d=dt(i);return WD[d.getDay()]+", "+d.getDate()+"-"+MO[d.getMonth()]};
+const info=i=>{const w=Math.floor(i/7),p=i%7,row=W[w],ty=p==0?"math":p==6?"mini":"learn";return{w,p,ty,th:row[0],t:row[p+1]||row[1]}};
+const el=()=>T.acc+(T.run?(Date.now()-T.t0)/1000:0);
+function ts(){try{localStorage.setItem("ds1t",JSON.stringify({i:T.i,run:T.run,t0:T.t0,acc:T.acc}))}catch(e){}}
+function wl(){if(T.run&&!WL){try{navigator.wakeLock.request("screen").then(l=>{WL=l;l.addEventListener("release",()=>WL=null)}).catch(()=>{})}catch(e){}}}
+function wr(){try{WL&&WL.release()}catch(e){}WL=null}
+function pause(){if(T.run){T.acc=el();T.run=false}wr();if(T.i===cur){const d=D[cur]||{r:0};d.s=Math.round(T.acc);if(d.s>0||D[cur]){D[cur]=d;sv()}}ts()}
+function go(x){pause();cur=Math.max(0,Math.min(N-1,cur+x));R()}
+function jump(i){pause();cur=i;R();scrollTo(0,0)}
+function start(){if(cur>ti||ti<0||T.run)return;try{Notification.requestPermission()}catch(e){}if(T.acc>=3600)T.acc=0;T.i=cur;T.t0=Date.now();T.run=true;ts();wl();R()}
+function reset(){wr();T={run:false,t0:0,acc:0,i:cur};if(D[cur]){D[cur].s=0;sv()}ts();R()}
+function rate(n){pause();const d=D[cur]||{};d.r=n;if(!d.s||d.s<60)d.s=3600;D[cur]=d;T.acc=d.s;sv();R()}
+function beep(){try{const a=new(window.AudioContext||window.webkitAudioContext)(),o=a.createOscillator();o.frequency.value=880;o.connect(a.destination);o.start();setTimeout(()=>o.stop(),900)}catch(e){}try{navigator.vibrate([300,150,300])}catch(e){}try{navigator.serviceWorker.ready.then(r=>r.showNotification("1 soat tugadi!",{body:"Endi o‘zingizga baho qo‘ying (1–10).",icon:"icon-192.png",vibrate:[300,150,300]}))}catch(e){try{new Notification("1 soat tugadi!")}catch(x){}}}
+function fin(){wr();T.acc=3600;T.run=false;const d=D[T.i]||{r:0};d.s=3600;D[T.i]=d;sv();ts();beep();R()}
+setInterval(()=>{if(T.run){if(el()>=3600)fin();else upd()}},1000);
+const mm=s=>{s=Math.max(0,Math.ceil(s));return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")};
+function upd(){const e=$("tm");if(e){e.textContent=mm(3600-el());$("pb").style.width=Math.min(100,el()/36)+"%"}}
+function stats(){let sum=0,n=0,rs=0,done=0;const last=Math.min(ti,N-1);for(let i=0;i<=last;i++){const d=D[i];if(d&&d.r>0){done++;rs+=d.r;sum+=d.r/10*Math.min(d.s||3600,3600)/3600}n++}let st=0;for(let i=(D[last]&&D[last].r>0)?last:last-1;i>=0;i--){if(D[i]&&D[i].r>0)st++;else break}return{K:n?Math.round(sum/n*100):0,avg:done?(rs/done).toFixed(1):"–",done,n,st}}
+function chart(){const last=Math.min(ti,N-1);if(last<0)return"<div class=m>Birinchi kundan keyin grafik paydo bo‘ladi.</div>";const a=Math.max(0,last-13);let s='<svg viewBox="0 0 300 110" width="100%"><line x1="0" y1="90" x2="300" y2="90" stroke="var(--b)"/>';for(let i=a;i<=last;i++){const r=(D[i]&&D[i].r)||0,x=(i-a)*21+4,h=r*8;s+=`<rect x="${x}" y="${90-h}" width="16" height="${h}" rx="3" fill="var(--a)"/><text x="${x+8}" y="${r?86-h:86}" font-size="9" text-anchor="middle" fill="var(--m)">${r||"✕"}</text><text x="${x+8}" y="103" font-size="8" text-anchor="middle" fill="var(--m)">${dt(i).getDate()}</text>`}return s+"</svg>"}
+function heat(){let h='<div class="m" style="display:grid;grid-template-columns:repeat(7,1fr);text-align:center;margin-bottom:3px"><span>Ya</span><span>Du</span><span>Se</span><span>Ch</span><span>Pa</span><span>Ju</span><span>Sh</span></div><div class="hm">';for(let i=0;i<N;i++){const r=D[i]&&D[i].r;let bg="var(--b)",op=.5;if(r){bg="var(--g)";op=Math.max(.3,r/10)}else if(i<ti){bg="var(--r)";op=.35}h+=`<button onclick="jump(${i})" ${i==cur?"class=n":""} style="background:${bg};opacity:${op}" title="${i+1}-kun">${i+1}</button>`}return h+"</div>"}
+function chk(j,v){const d=D[cur]||{r:0};d.c=d.c||[0,0,0];d.c[j]=v?1:0;D[cur]=d;sv();$("sg").textContent=[2,5,7,9][d.c.filter(Boolean).length]}
+function note(v){const d=D[cur]||{r:0};d.n=v;D[cur]=d;sv()}
+function bk(){const t=JSON.stringify(D);try{navigator.clipboard.writeText(t).then(()=>alert("Nusxa olindi. Eslatmalar ilovasiga yopishtirib saqlang.")).catch(()=>prompt("Nusxa oling:",t))}catch(e){prompt("Nusxa oling:",t)}}
+function rs(){const t=prompt("Saqlangan matnni yopishtiring:");if(!t)return;try{D=JSON.parse(t);sv();R()}catch(e){alert("Matn noto‘g‘ri.")}}
+const EX=`Dasturlash — kompyuterga aniq ko‘rsatma berish. Bu hafta Python’da matn, son va kiritish bilan ishlashni boshlaysiz.||nom = input("Ismingiz: ")¶print(f"Salom, {nom}!")
+Sikl bir ishni ko‘p marta qildiradi, shart esa qaror qabul qildiradi. Ma’lumot tahlilida har qator uchun shu ishlatiladi.||for i in range(1, 4):¶    print(i * 2)
+Funksiya — qayta ishlatiladigan kod bo‘lagi. Katta loyihani kichik qismlarga bo‘lish shunga tayanadi.||def kvadrat(x):¶    return x * x¶print(kvadrat(5))
+Ro‘yxat bir nechta qiymatni saqlaydi, masalan, haftalik harorat. Jadval ustunlari aslida shunga o‘xshaydi.||harorat = [12, 15, 9]¶print(sum(harorat) / len(harorat))
+Lug‘at "kalit: qiymat" juftligini saqlaydi, masalan, ekin va hosil. JSON va API ma’lumotlari shu shaklda keladi.||hosil = {"bug‘doy": 4.5, "paxta": 3.2}¶print(hosil["paxta"])
+Ma’lumot odatda faylda (CSV) turadi. Xato chiqsa dastur to‘xtamasligi uchun try/except kerak.||try:¶    f = open("data.csv")¶except FileNotFoundError:¶    print("Fayl yo‘q")
+Hamma o‘rgangan narsangizni bitta amaliy dasturda birlashtirasiz. Bu birinchi to‘liq loyihangiz.||
+Takrorlash eng kuchli o‘rganish usuli: zaif joylarni topib, ularni yopasiz.||
+GitHub — kodingiz uchun ochiq portfolio. Qabul komissiyasi ishingizni shu yerdan ko‘radi.||
+NumPy tez hisoblash uchun massivlar beradi; Pandas ham shu asosda ishlaydi.||import numpy as np¶a = np.array([2, 4, 6])¶print(a.mean(), a * 2)
+Pandas — Excel’ning kod bilan ishlaydigan kuchli varianti. DataFrame — jadval.||import pandas as pd¶df = pd.read_csv("data.csv")¶print(df.head())
+Haqiqiy ma’lumot iflos bo‘ladi: bo‘sh joylar, xatolar. Uni tozalash tahlilning yarmi.||df["hosil"].fillna(df["hosil"].mean())¶df.groupby("ekin")["hosil"].mean()
+Grafik raqamlardan tezroq tushuntiradi. Har grafikda sarlavha va o‘q nomi bo‘lsin.||import matplotlib.pyplot as plt¶plt.plot([1, 2, 3], [2, 4, 3])¶plt.title("Hosil")¶plt.show()
+EDA — ma’lumotga savol berish san’ati: nima ko‘p, nima bog‘liq, nima g‘alati?||df.describe()¶df.corr(numeric_only=True)
+Bu notebook portfolioingizdagi birinchi ish. Savol, tozalash, grafik, xulosa tartibini saqlang.||
+Ikkinchi notebook yer yoki hosil haqida bo‘lsin: bu keyingi agro-loyihaga ko‘prik.||
+SQL — katta jadvallardan kerakli qatorlarni so‘rab olish tili.||SELECT ekin, AVG(hosil)¶FROM dala¶GROUP BY ekin;
+Statistika o‘rtacha, tarqalish va tasodif bilan qonuniyatni ajratishni o‘rgatadi.||
+Bosqich tekshiruvi: nimani bilmasligingizni bilish o‘sishning boshlanishi.||
+ML — qoidani ma’lumotdan mashina o‘zi topadi. Train/test bo‘lish modelni halol baholash uchun.||from sklearn.model_selection import train_test_split¶X_tr, X_te, y_tr, y_te = train_test_split(X, y, test_size=0.2)
+Regressiya son bashorat qiladi (masalan, hosil). Overfitting — modelning yodlab olishi.||from sklearn.linear_model import LinearRegression¶m = LinearRegression().fit(X_tr, y_tr)¶print(m.score(X_te, y_te))
+Random Forest ko‘p daraxtdan ovoz oladi va odatda aniqroq.||from sklearn.ensemble import RandomForestRegressor¶m = RandomForestRegressor().fit(X_tr, y_tr)
+Kaggle musobaqasi sizni tashqi standartga qiyoslaydi. Natijangiz ochiq reytingda ko‘rinadi.||
+Endi o‘z qishlog‘ingiz ma’lumotini yig‘asiz. Savollar aniq, rozilik olingan va anonim bo‘lishi shart.||
+Dehqon bilan suhbat eng qimmat ish: bu ma’lumotni sizdan boshqa hech kim yig‘magan.||
+Ma’lumot sifati modeldan muhimroq. Har kiritishni ikki marta tekshiring.||
+Mentor yo‘nalish va ishonch beradi. Qisqa xat yozing: kimsiz, nima qildingiz, nima so‘rayapsiz.||
+Yil yakunlanadi va 10-sinf loyihasiga ko‘prik quriladi.||
+Yil natijalarini ko‘rib chiqing va o‘zingizni maqtang.||`.split("\n").map(l=>{const[a,b]=l.split("||");return[a,(b||"").replace(/¶/g,"\n")]});
+function xc(f){const e=EX[f.w]||EX[28],q={learn:["Bu nima?","Nega kerak?","Bir misol keltiring"],mini:["Nimani qurdim?","Qayerda xato qildim?","Uni qanday yaxshilayman?"],math:["Qoidani o‘z so‘zimda ayt","Data science’da qayerda kerak?","Bitta masala tuzing"]}[f.ty];return`<div class=c><h2>Tushuntirish</h2><div class=m><b>Nega bu hafta?</b> ${e[0]}</div>${e[1]?`<pre>${e[1]}</pre>`:""}<div class=tip><b>Feynman usuli:</b> mavzuni 12 yoshli bolaga tushuntirgandek ovoz chiqarib ayting: ${q.map(x=>"«"+x+"»").join(", ")}. Tushuntira olmasangiz, shu joyni qayta o‘qing.</div></div>`}
+function hero(){const p=Math.max(0,Math.min(N,ti+1)),dn=Object.values(D).filter(x=>x.r>0).length,w=Math.floor(cur/7),ph=w<8?"1-bosqich: Python":w<19?"2-bosqich: ma’lumot tahlili":"3-bosqich: Machine Learning va agro-ma’lumot";return`<div class="c hero"><div class=nav><b>${p}/${N}-kun</b><span>${dn} kun bajarildi</span></div><div class=bar><i style="width:${p/N*100}%"></i></div><div>${ph}</div><div class=row style="justify-content:flex-start;margin-top:8px"><button onclick="jump(Math.max(0,Math.min(N-1,ti)))">📍 Bugun</button><button id=ib onclick="dp&&dp.prompt()" style="display:${dp?"":"none"}">📲 O‘rnatish</button></div></div>`}
+function insight(){const lw=Math.min(28,Math.floor(Math.max(0,ti)/7));let s='<svg viewBox="0 0 300 100" width="100%"><line x1="0" y1="80" x2="300" y2="80" stroke="var(--b)"/>';for(let w=0;w<=lw;w++){let a=0,c=0;for(let j=0;j<7;j++){const d=D[w*7+j];if(d&&d.r>0){a+=d.r;c++}}const v=c?a/c:0;s+=`<rect x="${w*10.3}" y="${80-v*7.5}" width="8" height="${v*7.5}" rx="2" fill="var(--g)"/><text x="${w*10.3+4}" y="93" font-size="6" text-anchor="middle" fill="var(--m)">${w+1}</text>`}s+="</svg>";const r=[];for(let i=Math.max(0,ti-2);i<=Math.min(ti,N-1);i++)r.push((D[i]&&D[i].r)||0);let tip="Birinchi kunlardan keyin tavsiyalar paydo bo‘ladi.";if(r.length){const miss=r.filter(x=>!x).length,av=r.reduce((a,b)=>a+b,0)/r.length;tip=miss>=2?"So‘nggi 3 kunning kamida 2 tasini o‘tkazib yubordingiz. Har kuni bir xil vaqt belgilang (masalan, 19:00) va bugun faqat 20 daqiqadan boshlang.":av<6?"Baholar past. Yangi mavzuga o‘tmang: bugungi mavzuni yana bir marta xotiradan yozing va qiyin joyni daftarga yozing.":av>=8?"Zo‘r natija! Mini-loyihaga o‘zingiz yangi narsa qo‘shib ko‘ring.":"Yaxshi ketyapsiz. Halol baholang: 8 dan yuqorini faqat tushuntira olsangiz qo‘ying."}const dn2=Object.values(D).filter(x=>x.r>0).length,BD=[[1,"🌱 1-kun"],[7,"🔥 7 kun"],[30,"🏅 30 kun"],[60,"⭐ 60 kun"],[100,"🏆 100 kun"],[150,"🚀 150 kun"]].filter(x=>dn2>=x[0]).map(x=>`<span class=tag>${x[1]}</span>`).join(" ")||"<span class=m>Birinchi nishon 1-kun bajarilganda ochiladi.</span>";let pw="";if(ti>=7){const w=Math.floor(ti/7)-1;let a=0,c=0;for(let j=0;j<7;j++){const d=D[w*7+j];if(d&&d.r>0){a+=d.r;c++}}pw=`<div class=m style="margin-top:8px"><b>O‘tgan hafta (${w+1}):</b> ${c}/7 kun, o‘rtacha ${c?(a/c).toFixed(1):"–"}</div>`}
+return`<div class=c><h2>Nishonlar</h2>${BD}</div><div class=c><h2>Haftalik o‘rtacha baho</h2>${s}${pw}<div class=tip>${tip}</div></div><div class=c><h2>Ma’lumotni saqlash</h2><div class=m>Baholaringiz shu brauzerda turadi. Boshqa telefonga ko‘chirish uchun:</div><div class=row style="margin-top:8px"><button onclick="bk()">Nusxa olish</button><button onclick="rs()">Qayta tiklash</button></div></div>`}
+function R(){
+const i=cur,f=info(i),d=D[i]||{},ph=(f.ty=="math"?MS:RS).find(x=>f.w<x[0]);
+if(T.i!==i){T.acc=d.s||0;T.run=false;T.i=i}
+const stp=ST[f.ty].map(x=>{const[a,b]=x.split("|");return`<div class=st><b>${a}</b><span>${b.replace("{t}",f.t)}</span></div>`}).join("");
+const k=stats(),fut=i>ti,pre=ti<0;
+let h="";
+if(pre)h+=`<div class=c style="border-color:var(--a)"><b>Boshlanishga ${-ti} kun qoldi.</b><div class=m>Hozircha 1-kun rejasini ko‘rib chiqing. Taymer 15-noyabrdan ishlaydi.</div></div>`;
+h+=`<div class=c><div class=nav><button onclick="go(-1)" ${i==0?"disabled":""}>←</button><div style="text-align:center"><b>${i+1}-kun · ${fmt(i)}</b><div class=m>${f.w+1}-hafta: ${f.th}</div></div><button onclick="go(1)" ${i==N-1?"disabled":""}>→</button></div></div>
+<div class=c><span class=tag>${TY[f.ty]}</span><h2 style="margin-top:8px">${f.t}</h2>${stp}<div class=m><b>Maqsad:</b> ${ph[1]}</div><div class=m><b>Mezon:</b> ${MZ[f.ty]}</div><div class=lk>${ph[2].map(x=>L(x[0],x[1])).join("")}</div></div>
+<div class=c><div id=tm>${mm(3600-T.acc)}</div><div class=bar><i id=pb style="width:${Math.min(100,T.acc/36)}%"></i></div>
+<div class=row><button class=p onclick="start()" ${fut?"disabled":""}>▶ Boshlash</button><button onclick="pause();R()">⏸ To‘xtatish</button><button onclick="reset()">↺ Nolga</button></div>
+<div class=m style="text-align:center;margin-top:8px">${fut?"Bu kun hali kelmagan.":"Taymer sahifa ochiq turganda ishlaydi. Tugaganda signal beradi."}</div></div>
+${xc(f)}<div class=c><h2>Tekshiruv</h2>${CK.map((x,j)=>`<label class=ck><input type=checkbox ${(d.c||[])[j]?"checked":""} onchange="chk(${j},this.checked)" ${fut?"disabled":""}> ${x}</label>`).join("")}<textarea placeholder="Bugun nimani o‘rgandim? Qaysi joyi qiyin bo‘ldi?" oninput="note(this.value)">${(d.n||"").replace(/</g,"&lt;")}</textarea></div>
+<div class=c><h2>Bugun qanday qildingiz? (1–10)</h2><div class=m>Tekshiruv bo‘yicha tavsiya: <b id=sg>${[2,5,7,9][(d.c||[]).filter(Boolean).length]}</b></div><div class=rt>${[1,2,3,4,5,6,7,8,9,10].map(n=>`<button class="${d.r==n?"s":""}" onclick="rate(${n})" ${fut?"disabled":""}>${n}</button>`).join("")}</div>
+<div class=m>1–3: deyarli qilmadim · 4–6: qildim, lekin tushunmadim · 7–8: qildim va tushundim · 9–10: boshqaga tushuntira olaman</div></div>
+<div class=c><h2>Samaradorlik</h2><div class=kp><div><b>${k.K}%</b><span class=m>koeffitsient</span></div><div><b>${k.avg}</b><span class=m>o‘rtacha baho</span></div><div><b>${k.st}</b><span class=m>ketma-ket kun</span></div></div>
+<div class=m style="margin:8px 0">Koeffitsient = har kun (baho/10 × bajarilgan vaqt/60 daq) o‘rtachasi, o‘tkazib yuborilgan kun 0 hisoblanadi. Bajarilgan: ${k.done}/${k.n} kun.</div>${chart()}</div>
+<div class=c><h2>Nazorat xaritasi (197 kun)</h2>${heat()}<div class=m style="margin-top:6px">Yashil: baho qancha yuqori bo‘lsa, shuncha to‘q. Qizil: o‘tkazib yuborilgan kun. Kunni bosib o‘tishingiz mumkin.</div></div>`;
+$("app").innerHTML=hero()+h+insight()}
+try{const q=JSON.parse(localStorage.getItem("ds1t")||"null");if(q&&q.run&&q.i>=0&&q.i<N){cur=q.i;T={run:true,t0:q.t0,acc:q.acc,i:q.i}}}catch(e){}
+R();wl();
+if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+addEventListener("beforeinstallprompt",e=>{e.preventDefault();dp=e;const b=$("ib");if(b)b.style.display=""});
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState=="visible"){const o=ti;rt();if(T.run){if(el()>=3600)fin();else{wl();upd()}}else if(o!=ti)R()}});
+setInterval(()=>{const o=ti;rt();if(o!=ti&&!T.run)R()},60000);
+</script></body></html>
